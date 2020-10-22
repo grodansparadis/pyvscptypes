@@ -3,13 +3,11 @@
 # setup.py that excludes installing the "tests" package
 
 import sys
-sys.path.append('../')
-from vscp import *
+sys.path.append('../pyvscptypes')
+import vscp_type
 
 def test_success():
-    h1 = pyvscphlp_newSession()
-    if (0 == h1 ):
-        pyvscphlp_closeSession(h1)
+    print(vscp_type.VSCP_TYPE_PROTOCOL_ACTIVATE_NEW_IMAGE_ACK)
     assert True
 
 if __name__ == "__main__":
