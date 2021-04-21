@@ -19,7 +19,7 @@
 #            !!!!!!!!!!!!!!!!!!!!  W A R N I N G  !!!!!!!!!!!!!!!!!!!!
 #                           This file is auto-generated
 #                see https://github.com/grodansparadis/vscp-classes
-#                        Generated: 2020-12-02 14:52:08.931151
+#                        Generated: 2021-04-21 07:24:36.706973
 #
  
  
@@ -123,6 +123,10 @@ VSCP_TYPE_SECURITY_PASSWORD_OK                       = 30 # Valid password
 VSCP_TYPE_SECURITY_PASSWORD_FAIL                     = 31 # Invalid password
 VSCP_TYPE_SECURITY_PASSWORD_WARNING                  = 32 # Password warning
 VSCP_TYPE_SECURITY_PASSWORD_ERROR                    = 33 # Password error
+VSCP_TYPE_SECURITY_GAS_SENSOR                        = 34 # Gas
+VSCP_TYPE_SECURITY_IN_MOTION_DETECTED                = 35 # In motion
+VSCP_TYPE_SECURITY_NOT_IN_MOTION_DETECTED            = 36 # Not in motion
+VSCP_TYPE_SECURITY_VIBRATION_DETECTED                = 37 # Vibration
 
 #  CLASS1.MEASUREMENT = 10  -  Measurement
 VSCP_TYPE_MEASUREMENT_GENERAL                        = 0 # General event
@@ -188,6 +192,9 @@ VSCP_TYPE_MEASUREMENT_SOUND_DENSITY                  = 59 # Sound energy density
 VSCP_TYPE_MEASUREMENT_SOUND_LEVEL                    = 60 # Sound level
 VSCP_TYPE_MEASUREMENT_RADIATION_DOSE_EQ              = 61 # Radiation dose (equivalent)
 VSCP_TYPE_MEASUREMENT_RADIATION_DOSE_EXPOSURE        = 62 # Radiation dose (exposure)
+VSCP_TYPE_MEASUREMENT_POWER_FACTOR                   = 63 # Power factor
+VSCP_TYPE_MEASUREMENT_REACTIVE_POWER                 = 64 # Reactive Power
+VSCP_TYPE_MEASUREMENT_REACTIVE_ENERGY                = 65 # Reactive Energy
 
 #  CLASS1.MEASUREMENTX1 = 11  -  Measurement
 VSCP_TYPE_MEASUREMENTX1_GENERAL                      = 0 # General event
@@ -299,6 +306,7 @@ VSCP_TYPE_INFORMATION_ENTER                          = 84 # Enter
 VSCP_TYPE_INFORMATION_EXIT                           = 85 # Exit
 VSCP_TYPE_INFORMATION_INCREMENTED                    = 86 # Incremented
 VSCP_TYPE_INFORMATION_DECREMENTED                    = 87 # Decremented
+VSCP_TYPE_INFORMATION_PROXIMITY_DETECTED             = 88 # Proximity detected
 
 #  CLASS1.CONTROL = 30  -  Control
 VSCP_TYPE_CONTROL_GENERAL                            = 0 # General event
@@ -678,6 +686,8 @@ VSCP_TYPE_DIAGNOSTIC_HEATING_FAIL                    = 76 # Heating failure
 VSCP_TYPE_DIAGNOSTIC_TX_FAIL                         = 77 # Transmission failure
 VSCP_TYPE_DIAGNOSTIC_RX_FAIL                         = 78 # Receiption failure
 VSCP_TYPE_DIAGNOSTIC_EXT_IC_FAIL                     = 79 # External IC failure
+VSCP_TYPE_DIAGNOSTIC_CHARGING_ON                     = 80 # Charging of battery or similar has started or is in progress
+VSCP_TYPE_DIAGNOSTIC_CHARGING_OFF                    = 81 # Charging of battery or similar has ended
 
 #  CLASS1.ERROR = 508  -  Error
 VSCP_TYPE_ERROR_SUCCESS                              = 0 # Success
@@ -885,11 +895,11 @@ VSCP2_TYPE_INFORMATION_HEART_BEAT                    = 2 # Level II Node Heartbe
 VSCP2_TYPE_INFORMATION_PROXY_HEART_BEAT              = 3 # Level II Proxy Node Heartbeat
 VSCP2_TYPE_INFORMATION_CHANNEL_ANNOUNCE              = 4 # Level II Multicast channel announce
 
-#  CLASS2.TEXT2SPEECH = 1027  -  Text to speech
+#  CLASS2.TEXT2SPEECH = 1027  -  Level II Text to speech
 VSCP2_TYPE_TEXT2SPEECH_GENERAL                       = 0 # General event
 VSCP2_TYPE_TEXT2SPEECH_TALK                          = 1 # Talk
 
-#  CLASS2.HLO = 1028  -  High Level Object
+#  CLASS2.HLO = 1028  -  Level II High Level Object
 VSCP2_TYPE_HLO_GENERAL                               = 0 # General event
 VSCP2_TYPE_HLO_COMMAND                               = 1 # HLO Command
 VSCP2_TYPE_HLO_RESPONSE                              = 2 # HLO Response
@@ -900,13 +910,13 @@ VSCP2_TYPE_CUSTOM_GENERAL                            = 0 # General event
 #  CLASS2.DISPLAY = 1030  -  Level II Display
 VSCP2_TYPE_DISPLAY_GENERAL                           = 0 # General event
 
-#  CLASS2.MEASUREMENT_STR = 1040  -  Measurement string
+#  CLASS2.MEASUREMENT_STR = 1040  -  Level II Measurement string
 # 	Event types is the same as  CLASS1.MEASUREMENT = 10  -  Measurement
 
-#  CLASS2.MEASUREMENT_FLOAT = 1060  -  Measurement float
+#  CLASS2.MEASUREMENT_FLOAT = 1060  -  Level II Measurement float
 # 	Event types is the same as  CLASS1.MEASUREMENT = 10  -  Measurement
 
-#  CLASS2.VSCPD = 65535  -  VSCP Daemon internal events
+#  CLASS2.VSCPD = 65535  -  Level II VSCP Daemon internal events
 VSCP2_TYPE_VSCPD_GENERAL                             = 0 # General event
 VSCP2_TYPE_VSCPD_LOOP                                = 1 # Loop
 VSCP2_TYPE_VSCPD_PAUSE                               = 3 # Pause
