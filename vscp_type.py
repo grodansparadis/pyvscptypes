@@ -19,7 +19,7 @@
 #            !!!!!!!!!!!!!!!!!!!!  W A R N I N G  !!!!!!!!!!!!!!!!!!!!
 #                           This file is auto-generated
 #                see https://github.com/grodansparadis/vscp-classes
-#                        Generated: 2021-09-06 15:01:51.954349
+#                        Generated: 2022-12-29 13:58:04.610540
 #
  
  
@@ -885,6 +885,9 @@ VSCP2_TYPE_PROTOCOL_WRITE_REGISTER                   = 2 # Write Register
 VSCP2_TYPE_PROTOCOL_READ_WRITE_RESPONSE              = 3 # Read Write Response
 VSCP2_TYPE_PROTOCOL_HIGH_END_SERVER_CAPS             = 20 # High end server/service capabilities
 VSCP2_TYPE_PROTOCOL_WHO_IS_THERE_RESPONSE            = 32 # Level II who is there response
+VSCP2_TYPE_PROTOCOL_GET_MATRIX_INFO_RESPONSE         = 34 # Level II get DM info response
+VSCP2_TYPE_PROTOCOL_GET_EMBEDDED_MDF_RESPONSE        = 36 # Level II get embedded MDF response
+VSCP2_TYPE_PROTOCOL_GET_EVENT_INTEREST_RESPONSE      = 41 # Level II events of interest response
 
 #  CLASS2.CONTROL = 1025  -  Level II Control
 VSCP2_TYPE_CONTROL_GENERAL                           = 0 # General event
