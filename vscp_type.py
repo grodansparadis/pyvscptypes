@@ -19,7 +19,7 @@
 #            !!!!!!!!!!!!!!!!!!!!  W A R N I N G  !!!!!!!!!!!!!!!!!!!!
 #                           This file is auto-generated
 #                see https://github.com/grodansparadis/vscp-classes
-#                        Generated: 2022-12-29 13:58:04.610540
+#                        Generated: 2023-02-26 22:28:53.663354
 #
  
  
@@ -913,6 +913,10 @@ VSCP2_TYPE_CUSTOM_GENERAL                            = 0 # General event
 
 #  CLASS2.DISPLAY = 1030  -  Level II Display
 VSCP2_TYPE_DISPLAY_GENERAL                           = 0 # General event
+
+#  CLASS2.SECURITY = 1034  -  Level II Security
+VSCP2_TYPE_SECURITY_GENERAL                          = 0 # General event
+VSCP2_TYPE_SECURITY_SETKEY                           = 1 # Set key
 
 #  CLASS2.MEASUREMENT_STR = 1040  -  Level II Measurement string
 # 	Event types is the same as  CLASS1.MEASUREMENT = 10  -  Measurement
