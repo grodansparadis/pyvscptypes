@@ -4,7 +4,7 @@
 
 import sys
 sys.path.append('../pyvscptypes')
-import vscp_type
+import vscp-type
 
 def test_success():
     print(vscp_type.VSCP_TYPE_PROTOCOL_ACTIVATE_NEW_IMAGE_ACK)
