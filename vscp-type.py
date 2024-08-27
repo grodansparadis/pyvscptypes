@@ -19,7 +19,7 @@
 #            !!!!!!!!!!!!!!!!!!!!  W A R N I N G  !!!!!!!!!!!!!!!!!!!!
 #                           This file is auto-generated
 #                see https://github.com/grodansparadis/vscp-classes
-#                        Generated: 2024-04-08 08:39:21.996702
+#                        Generated: 2024-08-23 16:27:28.747477
 #
  
  
@@ -564,8 +564,8 @@ VSCP_TYPE_DISPLAY_WRITE_DISPLAY_BUFFER               = 4 # Write Display buffer
 VSCP_TYPE_DISPLAY_SHOW_DISPLAY_BUFFER                = 5 # Show Display Buffer
 VSCP_TYPE_DISPLAY_SET_DISPLAY_BUFFER_PARAM           = 6 # Set Display Buffer Parameter
 VSCP_TYPE_DISPLAY_SHOW_TEXT                          = 32 # Show Text
-VSCP_TYPE_DISPLAY_SHOW_LED                           = 48 # Set LED
-VSCP_TYPE_DISPLAY_SHOW_LED_COLOR                     = 49 # Set RGB Color
+VSCP_TYPE_DISPLAY_SET_LED                            = 48 # Set LED
+VSCP_TYPE_DISPLAY_SET_COLOR                          = 49 # Set RGB Color
 
 #  CLASS1.IR = 110  -  IR Remote I/f
 VSCP_TYPE_REMOTE_GENERAL                             = 0 # General event
