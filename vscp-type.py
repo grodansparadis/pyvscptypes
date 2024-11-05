@@ -19,7 +19,7 @@
 #            !!!!!!!!!!!!!!!!!!!!  W A R N I N G  !!!!!!!!!!!!!!!!!!!!
 #                           This file is auto-generated
 #                see https://github.com/grodansparadis/vscp-classes
-#                        Generated: 2024-11-01 12:00:44.089741
+#                        Generated: 2024-11-05 21:03:55.738670
 #
  
  
@@ -889,7 +889,7 @@ VSCP2_TYPE_PROTOCOL_GET_MATRIX_INFO_RESPONSE         = 34 # Level II get DM info
 VSCP2_TYPE_PROTOCOL_GET_EMBEDDED_MDF_RESPONSE        = 36 # Level II get embedded MDF response
 VSCP2_TYPE_PROTOCOL_GET_EVENT_INTEREST_RESPONSE      = 41 # Level II events of interest response
 VSCP2_TYPE_PROTOCOL_READ_REGISTER_DIRECT             = 43 # Read a Level II register from the 32-bit register space direct
-VSCP2_TYPE_PROTOCOL_READ_REGISTER_DIRECT             = 44 # Write a Level II register to the 32-bit register space direct
+VSCP2_TYPE_PROTOCOL_WRITE_REGISTER_DIRECT            = 44 # Write a Level II register to the 32-bit register space direct
 
 #  CLASS2.CONTROL = 1025  -  Level II Control
 VSCP2_TYPE_CONTROL_GENERAL                           = 0 # General event
